@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-primary">
-              YourBrand
+              Gama
             </Link>
           </div>
 
