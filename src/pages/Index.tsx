@@ -99,6 +99,24 @@ const Index = () => {
           </Button>
         </div>
       </section>
+
+      {/* Streamline Payments Section */}
+      <section className="py-20 bg-gray-100">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            Streamline Your Payments
+          </h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl">
+            Gama International Payment Service Provider offers cutting-edge solutions to simplify your 
+            transactions. Enhance your business operations with our seamless, secure, and efficient 
+            payment processing technology. Join the future of financial technology and experience hassle-free 
+            merchant acquiring today.
+          </p>
+          <Button asChild size="lg" className="bg-orange-400 hover:bg-orange-500 text-white px-12 py-4 text-lg font-semibold">
+            <Link to="/contact">Contact</Link>
+          </Button>
+        </div>
+      </section>
     </div>;
 };
 export default Index;
