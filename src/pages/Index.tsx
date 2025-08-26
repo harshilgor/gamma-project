@@ -15,12 +15,9 @@ const Index = () => {
                 Streamline Your Payments Today
               </h1>
               <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.</p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg">
-                  <Link to="/contact">Get Started</Link>
-                </Button>
-                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
-                  <Link to="/about">Learn More</Link>
+              <div className="flex justify-center">
+                <Button asChild size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-lg">
+                  <Link to="/solutions">Explore Solution</Link>
                 </Button>
               </div>
             </div>
