@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
+  return <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -20,25 +18,12 @@ const Index = () => {
                 <br />
                 <span className="text-blue-200">for Modern Enterprises</span>
               </h1>
-              <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">
-                Experience the future of business technology with our 
-                cutting-edge solutions designed to enhance efficiency 
-                and drive unprecedented growth.
-              </p>
+              <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button 
-                  asChild
-                  size="lg"
-                  className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg"
-                >
+                <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-white px-8 py-3 text-lg">
                   <Link to="/contact">Get Started</Link>
                 </Button>
-                <Button 
-                  asChild
-                  variant="outline" 
-                  size="lg"
-                  className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg"
-                >
+                <Button asChild variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
                   <Link to="/about">Learn More</Link>
                 </Button>
               </div>
@@ -97,8 +82,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
