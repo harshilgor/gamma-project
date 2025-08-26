@@ -12,11 +12,7 @@ const Index = () => {
                 EMPOWERING SEAMLESS TRANSACTIONS
               </h2>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-                Innovative
-                <br />
-                Business Solutions
-                <br />
-                <span className="text-blue-200">for Modern Enterprises</span>
+                Streamline Your Payments Today
               </h1>
               <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.</p>
               <div className="flex flex-col sm:flex-row gap-4">
