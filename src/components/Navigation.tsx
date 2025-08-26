@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,6 +17,12 @@ const Navigation = () => {
     { name: "Welcome", path: "/" },
     { name: "About Us", path: "/about" },
     { name: "Contact Us", path: "/contact" },
+  ];
+
+  const solutionItems = [
+    { name: "Pos", path: "/solutions/pos" },
+    { name: "Ecom", path: "/solutions/ecom" },
+    { name: "Pay-by-link", path: "/solutions/pay-by-link" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -42,6 +54,23 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
+              
+              {/* Explore Solutions Dropdown */}
+              <DropdownMenu>
+                <DropdownMenuTrigger className="px-3 py-2 text-sm font-medium transition-colors duration-200 text-muted-foreground hover:text-primary flex items-center gap-1">
+                  Explore solution
+                  <ChevronDown className="h-4 w-4" />
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="start" className="w-48">
+                  {solutionItems.map((item) => (
+                    <DropdownMenuItem key={item.name} asChild>
+                      <Link to={item.path} className="w-full">
+                        {item.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
             </div>
           </div>
 
@@ -71,6 +100,21 @@ const Navigation = () => {
                       ? "text-primary bg-primary/10"
                       : "text-muted-foreground hover:text-primary hover:bg-primary/5"
                   }`}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              
+              {/* Mobile Solutions */}
+              <div className="px-3 py-2 text-base font-medium text-muted-foreground">
+                Explore solution
+              </div>
+              {solutionItems.map((item) => (
+                <Link
+                  key={item.name}
+                  to={item.path}
+                  className="block px-6 py-2 text-sm font-medium transition-colors duration-200 text-muted-foreground hover:text-primary hover:bg-primary/5"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
