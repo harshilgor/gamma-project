@@ -81,6 +81,24 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Global Transactions Section */}
+      <section className="py-20 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
+            Empower Your Global Transactions
+          </h2>
+          <p className="text-lg text-gray-800 leading-relaxed mb-12 max-w-3xl mx-auto">
+            Gama International Payment Service Provider streamlines your global financial operations 
+            with cutting-edge technology. Expand your reach effortlessly with secure, efficient, and 
+            reliable merchant acquiring solutions. Elevate your business potential by embracing seamless 
+            international transactions today.
+          </p>
+          <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-gray-900 px-12 py-4 text-lg font-semibold">
+            <Link to="/contact">Contact</Link>
+          </Button>
+        </div>
+      </section>
     </div>;
 };
 export default Index;
