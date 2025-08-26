@@ -4,10 +4,8 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin } from "lucide-react";
-
 const Contact = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
@@ -53,11 +51,7 @@ const Contact = () => {
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="message">Message</Label>
-                    <Textarea 
-                      id="message" 
-                      placeholder="Tell us about your project or requirements"
-                      className="min-h-[120px]"
-                    />
+                    <Textarea id="message" placeholder="Tell us about your project or requirements" className="min-h-[120px]" />
                   </div>
                   <Button className="w-full">Send Message</Button>
                 </CardContent>
@@ -86,7 +80,7 @@ const Contact = () => {
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">info@yourbrand.com</p>
+                  <p className="text-muted-foreground">info@gipsp.ae </p>
                 </CardContent>
               </Card>
 
@@ -109,8 +103,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Contact;
