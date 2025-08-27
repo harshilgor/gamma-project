@@ -3,19 +3,35 @@ import { Link } from "react-router-dom";
 const Index = () => {
   return <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
       {/* Hero Section */}
-      <section className="py-32 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
-        <div className="relative z-10 max-w-7xl mx-auto">
-          <div className="max-w-4xl">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-white mb-8 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-              Streamline Your Payments Today
-            </h1>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-12 max-w-3xl font-light">
-              Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.
-            </p>
-            <Button asChild variant="secondary" size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 text-base font-medium">
-              <Link to="/solutions">Explore Solutions</Link>
-            </Button>
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Content */}
+            <div className="text-white">
+              <h2 className="text-sm font-medium mb-4 tracking-wide uppercase">
+                EMPOWERING SEAMLESS TRANSACTIONS
+              </h2>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
+                Streamline Your Payments Today
+              </h1>
+              <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.</p>
+              <div className="flex justify-start">
+                <Button asChild size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-lg">
+                  <Link to="/solutions">Explore Solution</Link>
+                </Button>
+              </div>
+            </div>
+
+            {/* Placeholder for device/illustration */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="w-80 h-96 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 flex items-center justify-center">
+                <div className="text-white/60 text-center">
+                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
+                  <p>Product Showcase</p>
+                  <p className="text-sm">Coming Soon</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -127,22 +143,16 @@ const Index = () => {
       </section>
 
       {/* Streamline Payments Section */}
-      <section className="py-32 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-white mb-8 leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-              Streamline Your Payments Today
-            </h1>
-            <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-12 max-w-2xl font-light">
-              Enhance your business operations with our seamless, secure, and efficient payment processing technology. Join the future of financial technology and experience hassle-free merchant acquiring today.
-            </p>
-            <Button asChild variant="secondary" size="lg" className="bg-white text-gray-900 hover:bg-gray-100 px-8 py-3 text-base font-medium">
-              <Link to="/contact">
-                Contact Sales
-              </Link>
-            </Button>
-          </div>
+      <section className="py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 tracking-tight">Streamline Your Payments Today!</h2>
+          <p className="text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl font-light">Enhance your business operations with our seamless, secure, and efficient payment processing technology. Join the future of financial technology and experience hassle-free merchant acquiring today.</p>
+          <Button asChild variant="outline" size="lg" className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-3 text-base font-medium transition-all duration-200">
+            <Link to="/contact" className="flex items-center gap-2">
+              Contact Sales 
+              <span className="text-lg">→</span>
+            </Link>
+          </Button>
         </div>
       </section>
     </div>;
