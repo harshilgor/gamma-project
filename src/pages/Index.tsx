@@ -113,7 +113,7 @@ const Index = () => {
             merchant acquiring today.
           </p>
           <Button asChild size="lg" className="bg-orange-400 hover:bg-orange-500 text-white px-12 py-4 text-lg font-semibold">
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">Contact Sales</Link>
           </Button>
         </div>
       </section>
