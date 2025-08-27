@@ -39,44 +39,66 @@ const Index = () => {
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Empower Your Financial Growth</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Discover how our innovative technology can transform your business operations
-            </p>
+          <div className="mb-16">
+            <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-600">OUR SERVICES</p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 leading-tight max-w-4xl" style={{ fontFamily: 'Georgia, serif' }}>
+              We aspire to be the world's most exceptional payment institution.
+            </h2>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Seamless Global Transactions</h3>
-              <p className="text-gray-600 leading-relaxed">Effortlessly send and receive payments worldwide with our secure, user-friendly platform.</p>
-              <button className="bg-orange-200 hover:bg-orange-300 text-gray-800 px-6 py-2 rounded transition-colors">
-                More info
-              </button>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+            <div className="space-y-6">
+              <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <div className="text-gray-500 text-center">
+                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
+                    <p className="text-sm">Global Payments</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-black">Seamless Global Transactions</h3>
+              <p className="text-gray-700 leading-relaxed text-sm">
+                The future of payments is defined by an unwavering commitment to security and an unrelenting pursuit of exceptional performance.
+              </p>
+              <a href="#" className="text-black text-sm font-medium underline hover:no-underline transition-all">
+                Discover Our Payment Solutions
+              </a>
             </div>
             
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Advanced Fraud Protection</h3>
-              <p className="text-gray-600 leading-relaxed">Guard your business with cutting-edge security measures against fraudulent activities.</p>
-              <button className="bg-orange-200 hover:bg-orange-300 text-gray-800 px-6 py-2 rounded transition-colors">
-                More info
-              </button>
+            <div className="space-y-6">
+              <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <div className="text-gray-500 text-center">
+                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
+                    <p className="text-sm">Security Shield</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-black">Advanced Fraud Protection</h3>
+              <p className="text-gray-700 leading-relaxed text-sm">
+                Our strategy is anchored in world-class, interconnected security systems that are uniquely positioned to drive growth and value for businesses and clients.
+              </p>
+              <a href="#" className="text-black text-sm font-medium underline hover:no-underline transition-all">
+                Learn About Our Security
+              </a>
             </div>
             
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Multi-Currency Payment Solutions</h3>
-              <p className="text-gray-600 leading-relaxed">Process payments in diverse currencies to cater to international customers with ease.</p>
-              <button className="bg-orange-200 hover:bg-orange-300 text-gray-800 px-6 py-2 rounded transition-colors">
-                More info
-              </button>
-            </div>
-            
-            <div className="space-y-4">
-              <h3 className="text-2xl font-bold text-gray-900">Instant Payment Notifications</h3>
-              <p className="text-gray-600 leading-relaxed">Receive real-time alerts and updates on every transaction for better transparency.</p>
-              <button className="bg-orange-200 hover:bg-orange-300 text-gray-800 px-6 py-2 rounded transition-colors">
-                More info
-              </button>
+            <div className="space-y-6">
+              <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
+                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                  <div className="text-gray-500 text-center">
+                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
+                    <p className="text-sm">Multi-Currency</p>
+                  </div>
+                </div>
+              </div>
+              <h3 className="text-xl font-bold text-black">Multi-Currency Solutions</h3>
+              <p className="text-gray-700 leading-relaxed text-sm">
+                We put our expertise, technology, and capital to work through innovative payment programs serving businesses across diverse global markets.
+              </p>
+              <a href="#" className="text-black text-sm font-medium underline hover:no-underline transition-all">
+                Explore Currency Options
+              </a>
             </div>
           </div>
         </div>
