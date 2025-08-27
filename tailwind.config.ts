@@ -84,11 +84,26 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'glow-cycle': {
+					'0%, 20%': { 
+						color: 'rgb(17, 24, 39)', 
+						textShadow: '0 0 20px rgba(59, 130, 246, 0.8), 0 0 40px rgba(59, 130, 246, 0.6)' 
+					},
+					'25%, 100%': { 
+						color: 'rgb(156, 163, 175)',
+						textShadow: 'none' 
+					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'glow-1': 'glow-cycle 5s ease-in-out infinite',
+				'glow-2': 'glow-cycle 5s ease-in-out infinite 1s',
+				'glow-3': 'glow-cycle 5s ease-in-out infinite 2s',
+				'glow-4': 'glow-cycle 5s ease-in-out infinite 3s',
+				'glow-5': 'glow-cycle 5s ease-in-out infinite 4s'
 			}
 		}
 	},

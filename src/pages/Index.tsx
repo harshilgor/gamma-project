@@ -82,6 +82,26 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Animated Text Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+              It's time to revolutionize
+            </h2>
+            <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
+              <span className="inline-block mr-3 text-gray-400 animate-glow-1">Payments.</span>
+              <span className="inline-block mr-3 text-gray-400 animate-glow-2">Transactions.</span>
+              <br className="hidden sm:block" />
+              <span className="inline-block mr-3 text-gray-400 animate-glow-3">Commerce.</span>
+              <span className="inline-block mr-3 text-gray-400 animate-glow-4">Business growth.</span>
+              <br className="hidden sm:block" />
+              <span className="inline-block text-gray-400 animate-glow-5">Really everything.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Global Transactions Section */}
       <section className="py-20 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
