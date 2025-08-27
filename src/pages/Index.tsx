@@ -85,17 +85,17 @@ const Index = () => {
       {/* Animated Text Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 leading-tight">
+          <div className="text-left mb-8">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
               It's time to revolutionize
             </h2>
-            <div className="text-3xl md:text-4xl lg:text-5xl font-bold leading-relaxed">
-              <span className="inline-block mr-3 text-gray-400 animate-glow-1">Payments.</span>
-              <span className="inline-block mr-3 text-gray-400 animate-glow-2">Transactions.</span>
-              <br className="hidden sm:block" />
-              <span className="inline-block mr-3 text-gray-400 animate-glow-3">Commerce.</span>
-              <span className="inline-block mr-3 text-gray-400 animate-glow-4">Business growth.</span>
-              <br className="hidden sm:block" />
+            <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <span className="inline-block mr-4 text-gray-400 animate-glow-1">Payments.</span>
+              <span className="inline-block mr-4 text-gray-400 animate-glow-2">Transactions.</span>
+              <br />
+              <span className="inline-block mr-4 text-gray-400 animate-glow-3">Commerce.</span>
+              <span className="inline-block mr-4 text-gray-400 animate-glow-4">Business growth.</span>
+              <br />
               <span className="inline-block text-gray-400 animate-glow-5">Really everything.</span>
             </div>
           </div>
