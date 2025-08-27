@@ -61,7 +61,14 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom brand colors
+				navy: 'hsl(var(--navy))',
+				orange: 'hsl(var(--orange))',
+				gold: 'hsl(var(--gold))',
+				success: 'hsl(var(--success))',
+				'light-gray': 'hsl(var(--light-gray))',
+				'medium-gray': 'hsl(var(--medium-gray))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
