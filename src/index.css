@@ -119,3 +119,54 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+/* Glow animations for animated text */
+@keyframes glow-1 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes glow-2 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes glow-3 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes glow-4 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+@keyframes glow-5 {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.animate-glow-1 {
+  animation: glow-1 3s ease-in-out infinite;
+  animation-delay: 0s;
+}
+
+.animate-glow-2 {
+  animation: glow-2 3s ease-in-out infinite;
+  animation-delay: 0.6s;
+}
+
+.animate-glow-3 {
+  animation: glow-3 3s ease-in-out infinite;
+  animation-delay: 1.2s;
+}
+
+.animate-glow-4 {
+  animation: glow-4 3s ease-in-out infinite;
+  animation-delay: 1.8s;
+}
+
+.animate-glow-5 {
+  animation: glow-5 3s ease-in-out infinite;
+  animation-delay: 2.4s;
+}

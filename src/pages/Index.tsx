@@ -1,36 +1,45 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-const Index = () => {
-  return <div className="min-h-screen bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800">
-      {/* Hero Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Content */}
-            <div className="text-white">
-              <h2 className="text-sm font-medium mb-4 tracking-wide uppercase">
-                EMPOWERING SEAMLESS TRANSACTIONS
-              </h2>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 leading-tight">
-                Streamline Your Payments Today
-              </h1>
-              <p className="text-xl mb-8 text-blue-100 leading-relaxed max-w-lg">Discover how our innovative solutions can transform your payment processing, enhancing efficiency and profitability for your business across Dubai and beyond.</p>
-              <div className="flex justify-start">
-                <Button asChild size="lg" className="bg-black hover:bg-gray-800 text-white px-8 py-3 text-lg">
-                  <Link to="/solutions">Explore Solution</Link>
-                </Button>
-              </div>
-            </div>
 
-            {/* Placeholder for device/illustration */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="w-80 h-96 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20 flex items-center justify-center">
-                <div className="text-white/60 text-center">
-                  <div className="w-16 h-16 bg-white/20 rounded-full mx-auto mb-4"></div>
-                  <p>Product Showcase</p>
-                  <p className="text-sm">Coming Soon</p>
-                </div>
-              </div>
+const Index = () => {
+  return (
+    <div className="min-h-screen bg-white">
+      {/* First Hero Section - What users see first */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+              Streamline Your Payments Today!
+            </h1>
+            <p className="text-lg text-white leading-relaxed mb-8 max-w-3xl mx-auto">
+              Enhance your business operations with our seamless, secure, and efficient payment processing technology.
+            </p>
+            <p className="text-lg text-white leading-relaxed mb-12 max-w-3xl mx-auto">
+              Join the future of financial technology and experience hassle-free merchant acquiring today.
+            </p>
+            <Button asChild className="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg text-lg shadow-lg transition-all duration-300">
+              <Link to="/contact">
+                Contact Sales <span className="ml-2">→</span>
+              </Link>
+            </Button>
+          </div>
+          
+        </div>
+      </section>
+
+      {/* Second Hero Section - "It's time to revolutionize" */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-left">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
+              It's time to revolutionize
+            </h2>
+            <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+              <div className="text-blue-600 animate-glow-1">Payments.</div>
+              <div className="text-blue-600 animate-glow-2">Transactions.</div>
+              <div className="text-blue-600 animate-glow-3">Commerce.</div>
+              <div className="text-blue-600 animate-glow-4">Business growth.</div>
+              <div className="text-blue-600 animate-glow-5">Really everything.</div>
             </div>
           </div>
         </div>
@@ -38,8 +47,8 @@ const Index = () => {
 
       {/* Features Section */}
       <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-16">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-16 text-left">
             <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-600">OUR SERVICES</p>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 leading-tight max-w-4xl" style={{ fontFamily: 'Georgia, serif' }}>
               We aspire to be the world's most exceptional payment institution.
@@ -49,11 +58,25 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             <div className="space-y-6">
               <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <div className="text-gray-500 text-center">
-                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
-                    <p className="text-sm">Global Payments</p>
-                  </div>
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
+                    src="/Transactions.jpg" 
+                    alt="Seamless Global Transactions - Global payment processing illustration"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement!.innerHTML = `
+                        <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                          <div class="text-gray-500 text-center">
+                            <div class="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
+                            <p class="text-sm">Global Payments</p>
+                          </div>
+                        </div>
+                      `;
+                    }}
+                  />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-black">Seamless Global Transactions</h3>
@@ -67,11 +90,25 @@ const Index = () => {
             
             <div className="space-y-6">
               <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <div className="text-gray-500 text-center">
-                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
-                    <p className="text-sm">Security Shield</p>
-                  </div>
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
+                    src="/Fraud.png" 
+                    alt="Advanced Fraud Protection - Security and fraud prevention illustration"
+                    className="w-full h-full object-cover"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement!.innerHTML = `
+                        <div class="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
+                          <div class="text-gray-500 text-center">
+                            <div class="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
+                            <p class="text-sm">Security Shield</p>
+                          </div>
+                        </div>
+                      `;
+                    }}
+                  />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-black">Advanced Fraud Protection</h3>
@@ -85,11 +122,25 @@ const Index = () => {
             
             <div className="space-y-6">
               <div className="aspect-[4/3] bg-gray-100 rounded-sm overflow-hidden">
-                <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
-                  <div className="text-gray-500 text-center">
-                    <div className="w-12 h-12 bg-gray-400 rounded-full mx-auto mb-2"></div>
-                    <p className="text-sm">Multi-Currency</p>
-                  </div>
+                <div className="w-full h-full flex items-center justify-center">
+                  <img 
+                    src="/multi-currency-accounts.png" 
+                    alt="Multi-Currency Accounts - Bank building with floating currency symbols and exchange icons"
+                    className="w-full h-full object-contain p-2"
+                    onError={(e) => {
+                      // Fallback if image fails to load
+                      const target = e.target as HTMLImageElement;
+                      target.style.display = 'none';
+                      target.parentElement!.innerHTML = `
+                        <div class="w-full h-full bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
+                          <div class="text-center">
+                            <div class="text-4xl mb-2">💱</div>
+                            <p class="text-sm text-gray-600">Multi-Currency Solutions</p>
+                          </div>
+                        </div>
+                      `;
+                    }}
+                  />
                 </div>
               </div>
               <h3 className="text-xl font-bold text-black">Multi-Currency Solutions</h3>
@@ -104,41 +155,133 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Animated Text Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-left mb-8">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
-              It's time to revolutionize
+      {/* Testimonials Section */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-left mb-16">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+              What Our Clients Say
             </h2>
-            <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <span className="inline-block mr-4 text-gray-400 animate-glow-1">Payments.</span>
-              <span className="inline-block mr-4 text-gray-400 animate-glow-2">Transactions.</span>
-              <br />
-              <span className="inline-block mr-4 text-gray-400 animate-glow-3">Commerce.</span>
-              <span className="inline-block mr-4 text-gray-400 animate-glow-4">Business growth.</span>
-              <br />
-              <span className="inline-block text-gray-400 animate-glow-5">Really everything.</span>
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">
+              Discover why businesses across the UAE trust Gama International for their payment processing needs.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Testimonial 1 */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="mb-6">
+                <div className="flex text-blue-400 mb-4">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                "Gama International transformed our merchant payment processing with their top-notch technology and exceptional customer service. Their reliable and efficient platform has driven our growth in the UAE market. A must-have partner for any business seeking innovation!"
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  AK
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Ahmed Khalifa</p>
+                  <p className="text-sm text-gray-600">Business Owner</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 2 */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="mb-6">
+                <div className="flex text-blue-400 mb-4">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                "Gama International has revolutionized our financial operations with their cutting-edge merchant acquiring solutions. Their seamless integration and robust support have been invaluable. Highly recommended for any company aiming for excellence in payment processing within the UAE."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  SM
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Sarah Mohammed</p>
+                  <p className="text-sm text-gray-600">Finance Director</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Testimonial 3 */}
+            <div className="bg-white rounded-lg p-8 shadow-lg">
+              <div className="mb-6">
+                <div className="flex text-blue-400 mb-4">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                </div>
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                "Gama International made our payment processing seamless and efficient. Their innovative solutions and dedicated support have significantly enhanced our business operations. We highly recommend their services to any merchant looking for reliable financial technology solutions."
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg mr-4">
+                  RK
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900">Rashid Khan</p>
+                  <p className="text-sm text-gray-600">Operations Manager</p>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Global Transactions Section */}
-      <section className="py-20 bg-gradient-to-br from-amber-400 via-yellow-500 to-amber-600">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">
-            Empower Your Global Transactions
-          </h2>
-          <p className="text-lg text-gray-800 leading-relaxed mb-12 max-w-3xl mx-auto">
-            Gama International Payment Service Provider streamlines your global financial operations 
-            with cutting-edge technology. Expand your reach effortlessly with secure, efficient, and 
-            reliable merchant acquiring solutions. Elevate your business potential by embracing seamless 
-            international transactions today.
-          </p>
-          <Button asChild size="lg" className="bg-white hover:bg-gray-100 text-gray-900 px-12 py-4 text-lg font-semibold">
-            <Link to="/contact">Contact</Link>
-          </Button>
         </div>
       </section>
 
@@ -155,6 +298,8 @@ const Index = () => {
           </Button>
         </div>
       </section>
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
