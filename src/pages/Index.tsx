@@ -8,7 +8,7 @@ const Index = () => {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-blue-600">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-8 leading-tight" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
               Streamline Your Payments Today!
             </h1>
             <p className="text-lg text-white leading-relaxed mb-8 max-w-3xl mx-auto">
@@ -69,7 +69,7 @@ const Index = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16 text-left">
             <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-600">OUR SERVICES</p>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-black mb-8 leading-tight max-w-4xl" style={{ fontFamily: 'Georgia, serif' }}>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-black mb-8 leading-tight max-w-4xl" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
               We aspire to be the world's most exceptional payment institution.
             </h2>
           </div>
@@ -178,7 +178,7 @@ const Index = () => {
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-left mb-16">
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-medium text-white mb-8 leading-tight" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>
               What Our Clients Say
             </h2>
             <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">
@@ -307,7 +307,7 @@ const Index = () => {
       {/* Streamline Payments Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 tracking-tight">Streamline Your Payments Today!</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-gray-900 mb-6 tracking-tight" style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif' }}>Streamline Your Payments Today!</h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl font-light">Enhance your business operations with our seamless, secure, and efficient payment processing technology. Join the future of financial technology and experience hassle-free merchant acquiring today.</p>
           <Button asChild variant="outline" size="lg" className="border-2 border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white px-8 py-3 text-base font-medium transition-all duration-200">
             <Link to="/contact" className="flex items-center gap-2">
