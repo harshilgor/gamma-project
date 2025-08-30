@@ -27,6 +27,25 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Company Description Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <div className="space-y-8 text-center">
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed">
+              We provide and manage advanced point of sale (POS) terminals that support all major debit and credit cards, including Visa and Mastercard. Whether serving small businesses or large retail operations, our focus is on helping merchants accept payments with ease, speed, and confidence.
+            </p>
+            
+            <p className="text-lg text-gray-700 leading-relaxed">
+              With a strong presence across the Middle East, GAMA International combines innovation, compliance, and hands-on support to ensure our clients receive end-to-end service from onboarding to daily operations. Our goal is to drive sustainable growth for our merchants through reliable technology and responsive customer care.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Second Hero Section - "It's time to revolutionize" */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
