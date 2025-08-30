@@ -101,22 +101,6 @@ export default {
 						color: 'rgb(156, 163, 175)',
 						textShadow: 'none' 
 					}
-				},
-				'scroll-up': {
-					'0%': {
-						transform: 'translateY(0)'
-					},
-					'100%': {
-						transform: 'translateY(-50%)'
-					}
-				},
-				'scroll-down': {
-					'0%': {
-						transform: 'translateY(-50%)'
-					},
-					'100%': {
-						transform: 'translateY(0)'
-					}
 				}
 			},
 			animation: {
@@ -126,9 +110,7 @@ export default {
 				'glow-2': 'glow-cycle 5s ease-in-out infinite 1s',
 				'glow-3': 'glow-cycle 5s ease-in-out infinite 2s',
 				'glow-4': 'glow-cycle 5s ease-in-out infinite 3s',
-				'glow-5': 'glow-cycle 5s ease-in-out infinite 4s',
-				'scroll-up': 'scroll-up 20s linear infinite',
-				'scroll-down': 'scroll-down 20s linear infinite'
+				'glow-5': 'glow-cycle 5s ease-in-out infinite 4s'
 			}
 		}
 	},
