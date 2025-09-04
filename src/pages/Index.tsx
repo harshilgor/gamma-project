@@ -27,21 +27,21 @@ const Index = () => {
       </section>
 
       {/* About Us Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-black">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
               About Us
             </h2>
           </div>
           <div className="space-y-6">
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               GAMA International is a trusted service provider in the electronic payments industry, working in close partnership with Arab Financial Services, a leading banking and fintech institution in the region. Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               We provide and manage advanced point of sale (POS) terminals that support all major debit and credit cards, including Visa and Mastercard. Whether serving small businesses or large retail operations, our focus is on helping merchants accept payments with ease, speed, and confidence.
             </p>
-            <p className="text-lg text-gray-700 leading-relaxed">
+            <p className="text-lg text-gray-300 leading-relaxed">
               With a strong presence across the Middle East, GAMA International combines innovation, compliance, and hands-on support to ensure our clients receive end-to-end service from onboarding to daily operations. Our goal is to drive sustainable growth for our merchants through reliable technology and responsive customer care.
             </p>
           </div>
@@ -49,10 +49,10 @@ const Index = () => {
       </section>
 
       {/* Second Hero Section - "It's time to revolutionize" */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="text-left">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-8 leading-tight">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-8 leading-tight">
               It's time to revolutionize
             </h2>
             <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
@@ -67,15 +67,15 @@ const Index = () => {
       </section>
 
       {/* Integrated Payment Solutions Section */}
-      <section className="py-20 bg-white relative overflow-hidden">
+      <section className="py-20 bg-black relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                      {/* Left Content Area */}
            <div className="relative z-10 mb-16">
-             <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-600">OUR SERVICES</p>
-             <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 tracking-tight">
+             <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-400">OUR SERVICES</p>
+             <h2 className="text-3xl md:text-4xl font-light text-white mb-6 tracking-tight">
                Completely Integrated, End-to-end Payment Solutions
              </h2>
-            <p className="text-lg text-gray-600 leading-relaxed max-w-3xl font-light">
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl font-light">
               RFM owns and manages a POS terminal network for First Abu Dhabi Bank across UAE, processing credit and debit cards at retails. Our services include catered solutions for in-store and online payment acceptance.
             </p>
           </div>
