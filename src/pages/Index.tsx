@@ -28,22 +28,33 @@ const Index = () => {
 
       {/* About Us Section */}
       <section className="py-20 bg-black">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
-              About Us
-            </h2>
-          </div>
-          <div className="space-y-6">
-            <p className="text-lg text-gray-300 leading-relaxed">
-              GAMA International is a trusted service provider in the electronic payments industry, working in close partnership with Arab Financial Services, a leading banking and fintech institution in the region. Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              We provide and manage advanced point of sale (POS) terminals that support all major debit and credit cards, including Visa and Mastercard. Whether serving small businesses or large retail operations, our focus is on helping merchants accept payments with ease, speed, and confidence.
-            </p>
-            <p className="text-lg text-gray-300 leading-relaxed">
-              With a strong presence across the Middle East, GAMA International combines innovation, compliance, and hands-on support to ensure our clients receive end-to-end service from onboarding to daily operations. Our goal is to drive sustainable growth for our merchants through reliable technology and responsive customer care.
-            </p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            {/* Left Side - Image */}
+            <div className="order-2 lg:order-1">
+              <img 
+                src="/Transactions.png" 
+                alt="Transaction processing illustration" 
+                className="w-full h-auto rounded-lg shadow-2xl transform rotate-270"
+              />
+            </div>
+            
+            {/* Right Side - Content */}
+            <div className="order-1 lg:order-2">
+              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white">
+                About Us
+              </h2>
+              <div className="space-y-6">
+                <p className="text-lg text-gray-300 leading-relaxed">
+                  GAMA International is a trusted service provider in the electronic payments industry, working in close partnership with Arab Financial Services, a leading banking and fintech institution in the region. Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
+                </p>
+                <Button asChild className="bg-white hover:bg-gray-100 text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                  <Link to="/about">
+                    Read More <span className="ml-2">→</span>
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -56,11 +67,11 @@ const Index = () => {
               It's time to revolutionize
             </h2>
             <div className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
-              <div className="text-blue-600 animate-glow-1">Payments.</div>
-              <div className="text-blue-600 animate-glow-2">Transactions.</div>
-              <div className="text-blue-600 animate-glow-3">Commerce.</div>
-              <div className="text-blue-600 animate-glow-4">Business growth.</div>
-              <div className="text-blue-600 animate-glow-5">Really everything.</div>
+              <div className="text-white animate-glow-1">Payments.</div>
+              <div className="text-white animate-glow-2">Transactions.</div>
+              <div className="text-white animate-glow-3">Commerce.</div>
+              <div className="text-white animate-glow-4">Business growth.</div>
+              <div className="text-white animate-glow-5">Really everything.</div>
             </div>
           </div>
         </div>

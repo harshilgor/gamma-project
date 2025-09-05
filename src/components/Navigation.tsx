@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +11,18 @@ import { Menu, X, ChevronDown } from "lucide-react";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 20);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const navItems = [
     { name: "Welcome", path: "/" },
@@ -28,12 +39,16 @@ const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="bg-background/95 backdrop-blur-sm border-b border-border sticky top-0 z-50">
+    <nav className={`transition-all duration-300 ease-in-out sticky z-50 ${
+      isScrolled 
+        ? 'bg-black/90 backdrop-blur-md border border-gray-800 rounded-2xl mx-4 mt-6 shadow-2xl top-4' 
+        : 'bg-black backdrop-blur-sm border-b border-gray-800 top-0'
+    }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link to="/" className="text-2xl font-bold text-primary">
+            <Link to="/" className="text-2xl font-bold text-white">
               Gama
             </Link>
           </div>
@@ -47,8 +62,8 @@ const Navigation = () => {
                   to={item.path}
                   className={`px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? "text-primary border-b-2 border-primary"
-                      : "text-muted-foreground hover:text-primary"
+                      ? "text-white border-b-2 border-white"
+                      : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {item.name}
@@ -57,7 +72,7 @@ const Navigation = () => {
               
               {/* Explore Solutions Dropdown */}
               <DropdownMenu>
-                <DropdownMenuTrigger className="px-3 py-2 text-sm font-medium transition-colors duration-200 text-muted-foreground hover:text-primary flex items-center gap-1">
+                <DropdownMenuTrigger className="px-3 py-2 text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white flex items-center gap-1">
                   Explore solution
                   <ChevronDown className="h-4 w-4" />
                 </DropdownMenuTrigger>
@@ -90,15 +105,17 @@ const Navigation = () => {
         {/* Mobile Navigation */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-background border-t border-border">
+            <div className={`px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-800 ${
+              isScrolled ? 'bg-black/90' : 'bg-black'
+            }`}>
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
                   className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
                     isActive(item.path)
-                      ? "text-primary bg-primary/10"
-                      : "text-muted-foreground hover:text-primary hover:bg-primary/5"
+                      ? "text-white bg-gray-800"
+                      : "text-gray-300 hover:text-white hover:bg-gray-800"
                   }`}
                   onClick={() => setIsOpen(false)}
                 >
@@ -107,14 +124,14 @@ const Navigation = () => {
               ))}
               
               {/* Mobile Solutions */}
-              <div className="px-3 py-2 text-base font-medium text-muted-foreground">
+              <div className="px-3 py-2 text-base font-medium text-gray-300">
                 Explore solution
               </div>
               {solutionItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="block px-6 py-2 text-sm font-medium transition-colors duration-200 text-muted-foreground hover:text-primary hover:bg-primary/5"
+                  className="block px-6 py-2 text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white hover:bg-gray-800"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
