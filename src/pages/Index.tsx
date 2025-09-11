@@ -7,21 +7,41 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-white">
-             {/* First Hero Section - What users see first */}
-       <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 bg-black">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
-              Streamline Your Payments Today!
-            </h1>
-            <p className="text-lg text-white leading-relaxed mb-12 max-w-3xl mx-auto">
-              Enhance your business operations with our seamless, secure, and efficient payment processing technology.
-            </p>
-            <Button asChild className="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg text-lg shadow-lg transition-all duration-300">
-              <Link to="/contact">
-                Contact Sales <span className="ml-2">→</span>
-              </Link>
-            </Button>
+             {/* First Hero Section - Updated Landing Screen */}
+       <section className="h-screen relative bg-black overflow-hidden">
+        {/* Lighter Container */}
+        <div className="h-full bg-black/20 mx-8 my-8 rounded-2xl flex items-center px-8 lg:px-16 backdrop-blur-sm border border-gray-700">
+          <div className="w-full">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
+              {/* Left Side - Full Height POS Image */}
+              <div className="order-1 h-full flex items-center">
+                <img 
+                  src="/poss.jpg" 
+                  alt="POS payment system" 
+                  className="w-full h-full object-cover rounded-lg shadow-2xl"
+                />
+              </div>
+              
+              {/* Right Side - Content */}
+              <div className="order-2 text-left flex flex-col justify-center h-full">
+                {/* Main Heading */}
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
+                  Streamline Your Payments Today!
+                </h1>
+                
+                {/* Description */}
+                <p className="text-lg text-gray-300 leading-relaxed mb-10 max-w-2xl">
+                  Enhance your business operations with our seamless, secure, and efficient payment processing technology. Experience the future of financial transactions.
+                </p>
+                
+                {/* CTA Button */}
+                <Button asChild className="bg-white hover:bg-gray-50 text-black font-medium py-3 px-8 rounded-lg text-lg border border-black transition-all duration-300 w-fit">
+                  <Link to="/contact">
+                    Contact Sales →
+                  </Link>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -48,9 +68,9 @@ const Index = () => {
                 <p className="text-lg text-gray-300 leading-relaxed">
                   GAMA International is a trusted service provider in the electronic payments industry, working in close partnership with Arab Financial Services, a leading banking and fintech institution in the region. Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
                 </p>
-                <Button asChild className="bg-white hover:bg-gray-100 text-black font-semibold py-3 px-6 rounded-lg transition-all duration-300">
+                <Button asChild className="bg-white hover:bg-gray-50 text-black font-medium py-3 px-6 rounded-lg border border-black transition-all duration-300">
                   <Link to="/about">
-                    Read More <span className="ml-2">→</span>
+                    Read More →
                   </Link>
                 </Button>
               </div>
@@ -83,11 +103,11 @@ const Index = () => {
                      {/* Left Content Area */}
            <div className="relative z-10 mb-16">
              <p className="text-sm font-medium mb-6 tracking-wide uppercase text-gray-400">OUR SERVICES</p>
-             <h2 className="text-3xl md:text-4xl font-light text-white mb-6 tracking-tight">
+             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 leading-tight">
                Completely Integrated, End-to-end Payment Solutions
              </h2>
-            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl font-light">
-              RFM owns and manages a POS terminal network for First Abu Dhabi Bank across UAE, processing credit and debit cards at retails. Our services include catered solutions for in-store and online payment acceptance.
+            <p className="text-lg text-gray-300 leading-relaxed max-w-3xl">
+              GAMA owns and manages a POS terminal network for Arab Financial Services across UAE, processing credit and debit cards at retails. Our services include catered solutions for in-store and online payment acceptance.
             </p>
           </div>
           
@@ -150,19 +170,6 @@ const Index = () => {
                 <div className="w-full h-px bg-gray-300"></div>
               </div>
 
-              {/* Card 5 - Comprehensive Merchant Support */}
-              <div className="flex-shrink-0 w-80 bg-white rounded-xl p-8 border border-gray-300">
-                <div className="w-12 h-12 bg-red-500 rounded-lg flex items-center justify-center mb-6">
-                  <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">Comprehensive Merchant Support</h3>
-                <p className="text-gray-600 leading-relaxed mb-6">
-                  Access 24/7 support tailored to optimize your payment processes and business growth.
-                </p>
-                <div className="w-full h-px bg-gray-300"></div>
-              </div>
 
               {/* Card 6 - Integrated Payment Gateway */}
               <div className="flex-shrink-0 w-80 bg-white rounded-xl p-8 border border-gray-300">
@@ -182,6 +189,29 @@ const Index = () => {
           </div>
           
 
+        </div>
+      </section>
+
+      {/* Customer Service Card Section */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gray-800 h-64 flex items-center">
+            {/* Left Side - Text Content */}
+            <div className="flex-1 px-8 py-6">
+              <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
+                Best Part - Get Access to 24/7 support tailored to optimize your payment processes and business growth.
+              </h2>
+            </div>
+            
+            {/* Right Side - Image */}
+            <div className="w-80 h-full flex-shrink-0">
+              <img 
+                src="/Customer-service.jpg" 
+                alt="24/7 Customer Support" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -264,9 +294,9 @@ const Index = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-6 tracking-tight">Streamline Your Payments Today!</h2>
           <p className="text-lg text-gray-600 leading-relaxed mb-12 max-w-3xl font-light">Enhance your business operations with our seamless, secure, and efficient payment processing technology. Join the future of financial technology and experience hassle-free merchant acquiring today.</p>
-          <Button asChild className="bg-white hover:bg-gray-100 text-blue-600 font-semibold py-3 px-8 rounded-lg text-lg shadow-lg transition-all duration-300">
+          <Button asChild className="bg-white hover:bg-gray-50 text-black font-medium py-3 px-8 rounded-lg text-lg border border-black transition-all duration-300">
             <Link to="/contact">
-              Contact Sales <span className="ml-2">→</span>
+              Contact Sales →
             </Link>
           </Button>
         </div>
