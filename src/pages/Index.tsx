@@ -10,20 +10,11 @@ const Index = () => {
              {/* First Hero Section - Updated Landing Screen */}
        <section className="h-screen relative bg-black overflow-hidden">
         {/* Lighter Container */}
-        <div className="h-full bg-black/20 mx-8 my-8 rounded-2xl flex items-center px-8 lg:px-16 backdrop-blur-sm border border-gray-700">
-          <div className="w-full">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center h-full">
-              {/* Left Side - Full Height POS Image */}
-              <div className="order-1 h-full flex items-center">
-                <img 
-                  src="/poss.jpg" 
-                  alt="POS payment system" 
-                  className="w-full h-full object-cover rounded-lg shadow-2xl"
-                />
-              </div>
-              
-              {/* Right Side - Content */}
-              <div className="order-2 text-left flex flex-col justify-center h-full">
+        <div className="h-full bg-black/20 mx-8 my-8 rounded-2xl flex backdrop-blur-sm border border-gray-700">
+          <div className="w-full h-full flex">
+            <div className="grid grid-cols-1 lg:grid-cols-2 h-full w-full">
+              {/* Left Side - Content */}
+              <div className="order-2 lg:order-1 flex flex-col justify-center px-8 lg:px-16 h-full">
                 {/* Main Heading */}
                 <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">
                   Streamline Your Payments Today!
@@ -40,6 +31,15 @@ const Index = () => {
                     Contact Sales →
                   </Link>
                 </Button>
+              </div>
+              
+              {/* Right Side - Full Height POS Image */}
+              <div className="order-1 lg:order-2 h-full">
+                <img 
+                  src="/poss.jpg" 
+                  alt="POS payment system" 
+                  className="w-full h-full object-cover rounded-r-2xl"
+                />
               </div>
             </div>
           </div>
@@ -94,6 +94,17 @@ const Index = () => {
               <div className="text-white animate-glow-5">Really everything.</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Random Image Section */}
+      <section className="py-20 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <img 
+            src="/random.jpg" 
+            alt="Random image" 
+            className="w-full h-auto rounded-lg"
+          />
         </div>
       </section>
 
@@ -194,17 +205,17 @@ const Index = () => {
 
       {/* Customer Service Card Section */}
       <section className="py-20 bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gray-800 h-64 flex items-center">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gray-800 h-96 flex items-center">
             {/* Left Side - Text Content */}
-            <div className="flex-1 px-8 py-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-white leading-tight">
-                Best Part - Get Access to 24/7 support tailored to optimize your payment processes and business growth.
+            <div className="flex-1 px-12 py-12">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-normal text-white leading-tight tracking-tight">
+                Get Access to 24/7 support tailored to optimize your payment processes and business growth.
               </h2>
             </div>
             
             {/* Right Side - Image */}
-            <div className="w-80 h-full flex-shrink-0">
+            <div className="w-96 h-full flex-shrink-0">
               <img 
                 src="/Customer-service.jpg" 
                 alt="24/7 Customer Support" 
@@ -277,11 +288,62 @@ const Index = () => {
                    </div>
                  </div>
                </div>
+
+               {/* Testimonial 4 - Fatima Al Zahra */}
+               <div className="flex-shrink-0 w-80 bg-black rounded-xl p-8 border border-gray-800 hover:border-white transition-colors duration-300 relative">
+                 <p className="text-white leading-relaxed mb-20 text-base">
+                   "Since partnering with Gama International, our transaction processing has been incredibly smooth. Their POS terminals work flawlessly, and their 24/7 support team has been invaluable during peak business hours. The integration was seamless and our customers love the fast checkout experience."
+                 </p>
+                 <div className="absolute bottom-8 left-8 flex items-center">
+                   <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-4">
+                     FZ
+                   </div>
+                   <div>
+                     <p className="font-semibold text-white text-base">Fatima Al Zahra</p>
+                     <p className="text-gray-400 text-sm">Restaurant Owner, Dubai</p>
+                   </div>
+                 </div>
+               </div>
+
+               {/* Testimonial 5 - Khalid Al Mansoori */}
+               <div className="flex-shrink-0 w-80 bg-black rounded-xl p-8 border border-gray-800 hover:border-white transition-colors duration-300 relative">
+                 <p className="text-white leading-relaxed mb-20 text-base">
+                   "Gama International's payment solutions have transformed our retail operations. The multi-currency support allows us to serve international customers effortlessly, and their fraud protection gives us peace of mind. Our sales have increased by 35% since implementing their system."
+                 </p>
+                 <div className="absolute bottom-8 left-8 flex items-center">
+                   <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-4">
+                     KM
+                   </div>
+                   <div>
+                     <p className="font-semibold text-white text-base">Khalid Al Mansoori</p>
+                     <p className="text-gray-400 text-sm">Retail Manager, Sharjah</p>
+                   </div>
+                 </div>
+               </div>
+
+               {/* Testimonial 6 - Layla Al Rashid */}
+               <div className="flex-shrink-0 w-80 bg-black rounded-xl p-8 border border-gray-800 hover:border-white transition-colors duration-300 relative">
+                 <p className="text-white leading-relaxed mb-20 text-base">
+                   "As a small business owner, I was hesitant about switching payment providers. Gama International made the transition incredibly easy with their personalized onboarding and ongoing support. Their competitive rates and reliable service have helped us grow our business significantly."
+                 </p>
+                 <div className="absolute bottom-8 left-8 flex items-center">
+                   <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-4">
+                     LR
+                   </div>
+                   <div>
+                     <p className="font-semibold text-white text-base">Layla Al Rashid</p>
+                     <p className="text-gray-400 text-sm">Boutique Owner, Ajman</p>
+                   </div>
+                 </div>
+               </div>
              </div>
 
                          {/* Pagination Dots */}
              <div className="flex justify-center mt-8 space-x-2">
                <div className="w-2 h-2 bg-white rounded-full"></div>
+               <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
+               <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
+               <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
                <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
                <div className="w-2 h-2 bg-gray-600 rounded-full"></div>
              </div>
