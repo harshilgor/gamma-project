@@ -21,20 +21,6 @@ const Ecom = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>API Integration</CardTitle>
-                <CardDescription>
-                  Simple API integration with popular e-commerce platforms
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Compatible with Shopify, WooCommerce, Magento, and custom solutions.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card>
-              <CardHeader>
                 <CardTitle>Secure Payments</CardTitle>
                 <CardDescription>
                   PCI DSS compliant payment processing with advanced fraud protection
@@ -57,6 +43,20 @@ const Ecom = () => {
               <CardContent>
                 <p className="text-sm text-muted-foreground">
                   Expand your business globally with multi-currency support.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card>
+              <CardHeader>
+                <CardTitle>Payment Gateways</CardTitle>
+                <CardDescription>
+                  Comprehensive payment gateway solutions with advanced security
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-muted-foreground">
+                  Our gateway accommodates various versatile payment methods, catering to all customer preferences. With advanced 3D secured transaction protocols, we safeguard transaction data and minimize fraud risks. Access to detailed analytics helps refine payment strategies and improve operational efficiency.
                 </p>
               </CardContent>
             </Card>

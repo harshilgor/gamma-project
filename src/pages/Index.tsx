@@ -33,11 +33,11 @@ const Index = () => {
                 </Button>
               </div>
               
-              {/* Right Side - Full Height POS Image */}
+              {/* Right Side - Full Height AFS Image */}
               <div className="order-1 lg:order-2 h-full">
                 <img 
-                  src="/poss.jpg" 
-                  alt="POS payment system" 
+                  src="/afs.jpg" 
+                  alt="AFS payment system" 
                   className="w-full h-full object-cover rounded-r-2xl"
                 />
               </div>
