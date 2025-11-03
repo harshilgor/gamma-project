@@ -21,7 +21,7 @@ const Ecom = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Secure Payments</CardTitle>
+                <CardTitle className="mb-4">Secure Payments</CardTitle>
                 <CardDescription>
                   PCI DSS compliant payment processing with advanced fraud protection
                 </CardDescription>
@@ -35,7 +35,7 @@ const Ecom = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Global Reach</CardTitle>
+                <CardTitle className="mb-4">Global Reach</CardTitle>
                 <CardDescription>
                   Accept payments from customers worldwide in multiple currencies
                 </CardDescription>
@@ -49,7 +49,7 @@ const Ecom = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Payment Gateways</CardTitle>
+                <CardTitle className="mb-4">Payment Gateways</CardTitle>
                 <CardDescription>
                   Comprehensive payment gateway solutions with advanced security
                 </CardDescription>

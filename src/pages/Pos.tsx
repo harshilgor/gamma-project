@@ -21,7 +21,7 @@ const Pos = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Easy Setup</CardTitle>
+                <CardTitle className="mb-4">Easy Setup</CardTitle>
                 <CardDescription>
                   Quick and simple installation process for your retail environment
                 </CardDescription>
@@ -35,7 +35,7 @@ const Pos = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Multiple Payment Methods</CardTitle>
+                <CardTitle className="mb-4">Multiple Payment Methods</CardTitle>
                 <CardDescription>
                   Accept credit cards, debit cards, contactless, and mobile payments
                 </CardDescription>
@@ -49,7 +49,7 @@ const Pos = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Real-time Analytics</CardTitle>
+                <CardTitle className="mb-4">Real-time Analytics</CardTitle>
                 <CardDescription>
                   Track sales, inventory, and customer data in real-time
                 </CardDescription>

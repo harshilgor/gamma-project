@@ -21,7 +21,7 @@ const PayByLink = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card>
               <CardHeader>
-                <CardTitle>Instant Link Generation</CardTitle>
+                <CardTitle className="mb-4">Instant Link Generation</CardTitle>
                 <CardDescription>
                   Create payment links in seconds with custom amounts and descriptions
                 </CardDescription>
@@ -35,7 +35,7 @@ const PayByLink = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Multiple Channels</CardTitle>
+                <CardTitle className="mb-4">Multiple Channels</CardTitle>
                 <CardDescription>
                   Share links via email, SMS, WhatsApp, or any messaging platform
                 </CardDescription>
@@ -49,7 +49,7 @@ const PayByLink = () => {
 
             <Card>
               <CardHeader>
-                <CardTitle>Payment Tracking</CardTitle>
+                <CardTitle className="mb-4">Payment Tracking</CardTitle>
                 <CardDescription>
                   Track payment status and send automatic reminders
                 </CardDescription>

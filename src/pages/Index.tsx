@@ -46,6 +46,20 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Partnership Section */}
+      <section className="py-16 bg-black">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-white text-lg font-medium mb-8">Proud Partners of</h2>
+          <div className="flex justify-center items-center">
+            <img 
+              src="/afs_logo.png" 
+              alt="AFS Partner Logo" 
+              className="h-20 w-auto"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* About Us Section */}
       <section className="py-20 bg-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
