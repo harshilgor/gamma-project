@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - GAMA International</title>
+    <meta name="description" content="Learn about GAMA International, a trusted service provider in the electronic payments industry.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --primary: hsl(220, 68%, 32%);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-white">
+    <!-- Navigation -->
+    <nav id="navigation" class="transition-all duration-300 ease-in-out sticky z-50 bg-black backdrop-blur-sm border-b border-gray-800 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-white">GAMA</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="px-3 py-2 text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white">Welcome</a>
+                        <a href="about.html" class="px-3 py-2 text-sm font-medium transition-colors duration-200 text-white border-b-2 border-white">About Us</a>
+                        <a href="contact.html" class="px-3 py-2 text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white">Contact Us</a>
+                        <div class="relative group">
+                            <button class="px-3 py-2 text-sm font-medium transition-colors duration-200 text-gray-300 hover:text-white flex items-center gap-1">
+                                Explore solution
+                                <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                                </svg>
+                            </button>
+                            <div class="absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                                <div class="py-1">
+                                    <a href="solutions.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Overview</a>
+                                    <a href="solutions/pos.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pos</a>
+                                    <a href="solutions/ecom.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Ecom</a>
+                                    <a href="solutions/pay-by-link.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Pay-by-link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobileMenuBtn" class="p-2 text-white">
+                        <svg id="menuIcon" class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="closeIcon" class="h-6 w-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobileMenu" class="md:hidden hidden px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-gray-800">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Welcome</a>
+                <a href="about.html" class="block px-3 py-2 text-base font-medium text-white bg-gray-800">About Us</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-gray-300 hover:text-white hover:bg-gray-800">Contact Us</a>
+                <div class="px-3 py-2 text-base font-medium text-gray-300">Explore solution</div>
+                <a href="solutions.html" class="block px-6 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800">Overview</a>
+                <a href="solutions/pos.html" class="block px-6 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800">Pos</a>
+                <a href="solutions/ecom.html" class="block px-6 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800">Ecom</a>
+                <a href="solutions/pay-by-link.html" class="block px-6 py-2 text-sm font-medium text-gray-300 hover:text-white hover:bg-gray-800">Pay-by-link</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="min-h-screen bg-white">
+        <!-- Hero Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                    About Us
+                </h1>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    GAMA International is a trusted service provider in the electronic payments industry, working in close partnership with Arab Financial Services, a leading banking and fintech institution in the region.
+                </p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-16 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="space-y-6">
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        Our collaboration enables us to deliver secure, efficient, and scalable payment solutions tailored to the needs of businesses across multiple sectors.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                        We provide and manage advanced point of sale (POS) terminals that support all major debit and credit cards, including Visa and Mastercard. Whether serving small businesses or large retail operations, our focus is on helping merchants accept payments with ease, speed, and confidence.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed text-lg">
+                        With a strong presence across the Middle East, GAMA International combines innovation, compliance, and hands-on support to ensure our clients receive end-to-end service from onboarding to daily operations. Our goal is to drive sustainable growth for our merchants through reliable technology and responsive customer care.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision, Mission, Values Section -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8" style="background-color: hsl(220, 68%, 32%);">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Vision -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center" style="background-color: hsl(220, 68%, 32%, 0.1);">
+                                <svg class="w-8 h-8" style="color: hsl(220, 68%, 32%);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-gray-900 uppercase tracking-wide">Our Vision</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            To lead the future of digital payments by empowering businesses with secure, innovative, and compliant solutions.
+                        </p>
+                    </div>
+
+                    <!-- Mission -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center" style="background-color: hsl(220, 68%, 32%, 0.1);">
+                                <svg class="w-8 h-8" style="color: hsl(220, 68%, 32%);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-gray-900 uppercase tracking-wide">Our Mission</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            To provide seamless and reliable payment services through advanced technology and trusted partnerships, helping businesses grow with confidence.
+                        </p>
+                    </div>
+
+                    <!-- Values -->
+                    <div class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <div class="flex justify-center mb-6">
+                            <div class="w-16 h-16 rounded-full flex items-center justify-center" style="background-color: hsl(220, 68%, 32%, 0.1);">
+                                <svg class="w-8 h-8" style="color: hsl(220, 68%, 32%);" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-center mb-4 text-gray-900 uppercase tracking-wide">Our Values</h3>
+                        <p class="text-gray-600 text-center leading-relaxed">
+                            We value innovation, simplicity, and trust. Our focus is on secure solutions, strong relationships, and consistently exceeding expectations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+                <!-- Solutions -->
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 tracking-wider uppercase text-gray-400">
+                        SOLUTIONS
+                    </h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="solutions.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                Overview
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solutions/pos.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                POS Solutions
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solutions/ecom.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                E-commerce Integration
+                            </a>
+                        </li>
+                        <li>
+                            <a href="solutions/pay-by-link.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                Pay by Link
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Company -->
+                <div>
+                    <h4 class="text-sm font-semibold mb-6 tracking-wider uppercase text-gray-400">
+                        COMPANY
+                    </h4>
+                    <ul class="space-y-4">
+                        <li>
+                            <a href="about.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="text-white hover:text-orange-500 transition-colors duration-200">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 mt-16 pt-8">
+                <div class="flex flex-col lg:flex-row justify-between items-center space-y-4 lg:space-y-0">
+                    <div class="text-gray-400 text-sm">
+                        © 2024 GAMA International Payment Services Provider. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        const closeIcon = document.getElementById('closeIcon');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            });
+        }
+
+        // Navigation scroll effect
+        const navigation = document.getElementById('navigation');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navigation.classList.remove('bg-black', 'backdrop-blur-sm', 'border-b', 'border-gray-800', 'top-0');
+                navigation.classList.add('bg-black/90', 'backdrop-blur-md', 'border', 'border-gray-800', 'rounded-2xl', 'mx-4', 'mt-6', 'shadow-2xl', 'top-4');
+            } else {
+                navigation.classList.remove('bg-black/90', 'backdrop-blur-md', 'border', 'border-gray-800', 'rounded-2xl', 'mx-4', 'mt-6', 'shadow-2xl', 'top-4');
+                navigation.classList.add('bg-black', 'backdrop-blur-sm', 'border-b', 'border-gray-800', 'top-0');
+            }
+        });
+    </script>
+</body>
+</html>
+
